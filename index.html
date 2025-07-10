@@ -1,82 +1,125 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Jothi Silks - Find Us</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', sans-serif;
-            background-color: #fdf6f0;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background-color: #d4af37;
-            color: white;
-            padding: 20px;
-            font-size: 2rem;
-            font-weight: bold;
-        }
-        .map-container {
-            margin: 30px auto;
-            max-width: 90%;
-        }
-        .map-container img {
-            width: 100%;
-            max-width: 800px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-        .cta {
-            margin: 20px;
-        }
-        .cta a {
-            background-color: #d4af37;
-            color: white;
-            padding: 15px 25px;
-            text-decoration: none;
-            border-radius: 6px;
-            font-size: 1.1rem;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-        }
-        .qr {
-            margin-top: 30px;
-        }
-        .qr img {
-            width: 180px;
-        }
-        footer {
-            margin-top: 40px;
-            font-size: 0.9rem;
-            color: #777;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jothi Silks</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Noto+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Noto Sans', sans-serif;
+      background: #fff8f0;
+      color: #333;
+      overflow-x: hidden;
+    }
+    header {
+      text-align: center;
+      background: linear-gradient(to bottom, #000000, #444);
+      padding: 40px 20px;
+    }
+    header img {
+      max-width: 100%;
+      height: auto;
+      animation: fadeIn 2s ease-in-out;
+    }
+    section.intro {
+      padding: 50px 20px;
+      text-align: center;
+    }
+    section.intro h1 {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3em;
+      color: #c084fc;
+      animation: slideUp 1s ease-in-out;
+    }
+    section.intro p {
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 20px auto;
+      line-height: 1.6;
+    }
+    section.gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+    section.gallery img {
+      width: 300px;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      transition: transform 0.3s ease;
+    }
+    section.gallery img:hover {
+      transform: scale(1.05);
+    }
+    section.contact {
+      background: #f1ede9;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .contact-info {
+      font-size: 1.1em;
+      margin-top: 10px;
+    }
+    .contact-info a {
+      color: #2d6cdf;
+      text-decoration: none;
+    }
+    .qr {
+      margin-top: 30px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+      background: #eee;
+      color: #555;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        Welcome to Jothi Silks
-    </header>
+  <header>
+    <img src="logo.png" alt="Jothi Silks" class="mx-auto w-56 mb-6">
+  </header>
 
-    <div class="map-container">
-        <img src="map.png" alt="Map showing Jothi Silks location">
-    </div>
-
-    <div class="cta">
-        <a href="https://www.google.com/maps/dir/?api=1&destination=61+Nehru+Road,+Kammanahalli,+Opposite+Ujjivan+Bank" target="_blank">
-            📍 Get Directions
-        </a>
-    </div>
-
+  <section class="intro">
+    <p>Discover the elegance of traditional Indian attire. We offer handpicked sarees, exquisite churidars, and ethnic wear that reflects your timeless beauty. Visit us to experience the charm of authentic fashion.</p>
+  </section>
+  <section class="contact">
+    <h2>Visit or Contact Us</h2>
+    <p class="contact-info">
+      📍 <strong>#61, Nehru Road, Kammanahalli, Opposite Ujjivan Bank</strong><br><br>
+      📞 <a href="https://wa.me/919008233422">Call or WhatsApp: +91-9008-233-422</a><br>
+      ✉️ <a href="mailto:ask@jothisilks.co.in">ask@jothisilks.co.in</a>
+    </p>
     <div class="qr">
-        <p>Scan to navigate from your phone:</p>
-        <img src="jothi_silks_qr.png" alt="QR code to navigate to Jothi Silks">
-    </div>
+      <p><strong>Scan to navigate from your current location:</strong></p>
+      <img src="nav.png" alt="Navigate to Jothi Silks" class="mx-auto mt-2 w-28 h-28 object-contain">
 
-    <footer>
-        #61, Nehru Road, Kammanahalli, Opposite Ujjivan Bank, Bengaluru
-    </footer>
+    </div>
+  </section>
+  <section class="gallery">
+    <img src="https://source.unsplash.com/300x400/?saree" alt="Saree" />
+    <img src="https://source.unsplash.com/300x400/?churidhar" alt="Churidhar" />
+    <img src="https://source.unsplash.com/300x400/?indian-fashion" alt="Indian Wear" />
+  </section>
+
+  
+
+  <footer>
+    © 2025 Jothi Silks. All rights reserved.
+  </footer>
 </body>
 </html>
